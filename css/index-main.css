@@ -1,0 +1,28 @@
+.h2-title{
+    font-size: 26px;
+    font-family: 'BenchNine', sans-serif;
+    color: var(--main-gold-color);
+}
+
+.p-title{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--white-text-color);
+}
+
+.h1{
+    font-size: 46px;
+    font-family: 'BenchNine', sans-serif;
+    color: var(--main-gold-color);
+}
+
+.p-top{
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+}
+
+.block1{
+    display: grid;
+    grid-template-rows: 1fr;
+}
