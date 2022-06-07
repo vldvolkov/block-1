@@ -19,6 +19,7 @@
     color: var(--main-gold-color);
     padding-top: 100px;
     padding-bottom: 20px;
+    z-index: 2;
 }
 
 .p-top{
@@ -31,30 +32,67 @@
 
 .block1{
     display: grid;
-    grid-template-columns: 10% 10% 1fr;
+    grid-template-columns: 15% 15% 1fr;
     padding: 32px 32px;
-    background-color: gray;
-    margin: 20px 100px;
+    background-color: var(--main-bg-color);
+    margin: 20px 200px;
 
 }
 
 .block2{
     display: grid;
-    grid-template-columns: 10% 10% 3fr;
+    grid-template-columns: 15% 15% 1fr;
     padding: 32px 32px;
-    background-color: gray;
-    margin: 20px 100px;
+    background-color: var(--main-bg-color);
+    margin: 20px 200px;
 }
 
 .block3{
     display: grid;
-    grid-template-columns: 10% 10% 1fr;
+    grid-template-columns: 15% 15% 1fr;
     grid-template-rows: 20%;
     padding: 32px 32px;
-    margin: 20px 100px;
-    background-color: gray;
+    margin: 20px 200px;
+    background-color: var(--main-bg-color);
+    z-index: 2;
 }
 
-.img-block{
-   
+.whiteline{
+    height: 32px;
+    width: auto;
+}
+
+.container{
+    background:url(/img/hand-rolling-cigar-production-21020856.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+    background: rgba(0,0,0, 0.5);
+}
+
+
+
+
+@media (max-width:767px) {
+    .container{
+        background-position: center;
+    }
+    .block1 {
+        grid-template-columns: auto;
+        padding: 32px 32px;
+        margin: 20px 20px;
+    }
+    .block2{
+        grid-template-columns: auto;
+        padding: 32px 32px;
+        margin: 20px 20px;
+    }
+    .block3{
+        grid-template-columns: auto;
+        padding: 32px 32px;
+        margin: 20px 20px;
+    }
 }
